@@ -26,6 +26,6 @@ class MyPackageProvider extends ServiceProvider
      */
     public function boot()
     {
-        $this->app->make('controller\TaskController');
+        $this->app->make(__DIR__.'/../controller/TaskController');
     }
 }
