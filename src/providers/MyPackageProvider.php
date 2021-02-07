@@ -13,8 +13,10 @@ class MyPackageProvider extends ServiceProvider
      */
     public function register()
     {
-        $this->loadRoutesFrom('/routes.php');
-        $this->loadMigrationsFrom('/migrations');
+        $this->loadRoutesFrom('routes.php');
+        $this->loadMigrationsFrom('migrations');
+        // $this->loadRoutesFrom(__DIR__.'./routes.php');
+        // $this->loadMigrationsFrom(__DIR__.'./migrations');
     }
 
     /**
