@@ -3,6 +3,7 @@
 namespace Mypackage\controller;
 
 use Illuminate\Http\Request;
+use App\Http\Controllers\Controller;
 use packages\rlpackages\mypackage\src\Task;
 
 class TaskController extends Controller
