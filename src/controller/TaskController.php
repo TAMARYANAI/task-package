@@ -1,6 +1,6 @@
 <?php
 
-namespace Mypackage;
+namespace Mypackage\controller;
 
 use Illuminate\Http\Request;
 use packages\rlpackages\mypackage\src\Task;
