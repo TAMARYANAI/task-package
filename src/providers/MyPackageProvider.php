@@ -13,8 +13,8 @@ class MyPackageProvider extends ServiceProvider
      */
     public function register()
     {
-        $this->loadRoutesFrom('packages/rlpackages/mypackage/src/routes.php');
-        $this->loadMigrationsFrom('packages/rlpackages/mypackage/src/migrations');
+        $this->loadRoutesFrom(__DIR__.'/routes.php');
+        $this->loadMigrationsFrom(__DIR__.'/migrations');
     }
 
     /**
@@ -24,6 +24,6 @@ class MyPackageProvider extends ServiceProvider
      */
     public function boot()
     {
-        // $this->app->make('wisdmLabs\todolist\TodolistController')
+        $this->app->make('Mypackage\controller\TaskController');
     }
 }

@@ -1,0 +1,26 @@
+{
+    "name": "tamaryanai/first-package",
+    "description": "example",
+
+    "authors": [
+        {
+            "name": "Tamar Y",
+            "email": "t@gmail.com"
+        }
+    ],
+
+    "autoload": {
+        "psr-4": {
+            "Mypackage\\": "src/"
+        }
+    },
+
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Mypackage\\providers\\MyPackageProvider"
+            ]
+        }
+    },
+    "require": {}
+}
