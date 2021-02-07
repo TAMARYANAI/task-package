@@ -13,10 +13,10 @@ class MyPackageProvider extends ServiceProvider
      */
     public function register()
     {
-        $this->loadRoutesFrom('routes.php');
-        $this->loadMigrationsFrom('migrations');
-        // $this->loadRoutesFrom(__DIR__.'./routes.php');
-        // $this->loadMigrationsFrom(__DIR__.'./migrations');
+        // $this->loadRoutesFrom('routes.php');
+        // $this->loadMigrationsFrom('migrations');
+        $this->loadRoutesFrom(__DIR__.'/../routes.php');
+        $this->loadMigrationsFrom(__DIR__.'/../migrations');
     }
 
     /**
@@ -26,6 +26,6 @@ class MyPackageProvider extends ServiceProvider
      */
     public function boot()
     {
-        $this->app->make('Mypackage\controller\TaskController');
+        $this->app->make('controller\TaskController');
     }
 }
